@@ -1,0 +1,47 @@
+html, body {
+    height: 100%; /* Make sure the HTML and body take full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will ensure content is spaced correctly */
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 400px; /* Reduced size */
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1; /* Allow form-container to take up remaining space */
+}
+
+h2 {
+    color: #2e7d32; /* Darker green for headings */
+}
+
+.btn-submit {
+    background-color: #BDE8CA; /* Light green */
+    color: black; /* Button text color */
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-submit:hover {
+    background-color: #A5D6A7; /* Darker shade on hover */
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    width: 100%; /* Ensure the footer spans the full width */
+}

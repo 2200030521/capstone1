@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E8F6FD; /* Soft light blue background for the entire page */
+    color: #333; /* Main text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #A9D6F1; /* Light blue navbar */
+    border-bottom: 2px solid #81C784; /* Subtle darker blue for contrast */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays on top */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #2d2d2d !important; /* Dark gray text for navbar items */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #FFEB3B !important; /* Yellow on hover for contrast */
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?help,food') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 150px 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.jumbotron h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.jumbotron p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* Section Styles */
+.section {
+    margin: 60px 20px;
+    padding: 40px 30px;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: translateY(-5px); /* Subtle hover effect for sections */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0277BD; /* Darker blue for titles */
+    margin-bottom: 30px;
+    border-bottom: 3px solid #FFEB3B; /* Bright yellow underline */
+    padding-bottom: 10px;
+}
+
+.section p, .section ul {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.section ul li:before {
+    content: '✔';
+    color: #4FC3F7; /* Blue checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #A9D6F1; /* Light blue footer */
+    color: #2d2d2d; /* Dark gray text */
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 40px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 100px 20px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.8rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p, .section ul {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}

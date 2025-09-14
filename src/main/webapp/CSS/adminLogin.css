@@ -1,0 +1,168 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    background-image: url('../Images/admin.jpg'); /* Add the background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+/* Flexbox container to ensure footer stays at the bottom */
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.flex-grow-1 {
+    flex-grow: 1; /* Allow the main content to grow and push the footer to the bottom */
+}
+
+/* Moving food objects background */
+.food-background {
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1; /* Send it to the back */
+    overflow: hidden; /* Hide overflowing objects */
+}
+
+/* Food item styles */
+.food-item {
+    position: absolute;
+    border-radius: 50%; /* Makes the items circular */
+    animation: move 10s linear infinite; /* Animate the items */
+}
+
+/* Keyframes for moving animation */
+@keyframes move {
+    0% {
+        transform: translateY(100vh); /* Start from the bottom */
+    }
+    100% {
+        transform: translateY(-100vh); /* Move up out of view */
+    }
+}
+
+/* Specific styles for food shapes */
+.apple {
+    background-color: #FF6347; /* Tomato color for apple */
+    width: 40px; /* Width of food items */
+    height: 40px; /* Height of food items */
+    left: 10%; /* Randomize positions */
+    animation-duration: 12s; /* Randomize speed */
+}
+
+.banana {
+    background-color: #FFD700; /* Golden color for banana */
+    width: 30px; /* Width of food items */
+    height: 60px; /* Height of food items */
+    left: 30%; /* Randomize positions */
+    animation-duration: 10s; /* Randomize speed */
+    border-radius: 20px; /* Rounded rectangle shape for banana */
+}
+
+.carrot {
+    background-color: #FF8C00; /* Dark orange color for carrot */
+    width: 20px; /* Width of food items */
+    height: 80px; /* Height of food items */
+    left: 50%; /* Randomize positions */
+    animation-duration: 14s; /* Randomize speed */
+    border-radius: 10px; /* Slightly rounded rectangle shape for carrot */
+}
+
+/* Navbar styles */
+.custom-navbar {
+    background-color: #ADD8E6; /* Light blue background for the navbar */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: black !important; /* Change text color to black */
+    font-weight: bold; /* Bold text for better visibility */
+}
+
+.custom-navbar .nav-link:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Jumbotron styles */
+.jumbotron {
+    background-color: #ADD8E6; /* Light blue background */
+    color: #333; /* Dark text color */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Form container styles */
+.form-container {
+    max-width: 500px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form horizontally */
+    background: #fff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    padding: 30px; /* Increased padding inside the form */
+}
+
+/* Heading styles */
+.container h2 {
+    color: #ADD8E6; /* Light blue color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    font-size: 1.8em; /* Increased font size */
+    font-weight: bold; /* Make heading bold */
+}
+
+/* Form styles */
+.form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 2px solid #ADD8E6; /* Thicker light blue border for inputs */
+    padding: 10px; /* Padding for inputs */
+}
+
+.form-control:focus {
+    border-color: #5a9bd5; /* Darker blue when focused */
+    box-shadow: 0 0 5px rgba(173, 216, 230, 0.5); /* Glow effect on focus */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #ADD8E6; /* Light blue background for buttons */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for buttons */
+    font-weight: bold; /* Bold text for buttons */
+}
+
+.btn-primary:hover {
+    background-color: #5a9bd5; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #ADD8E6; /* Light blue background */
+    color: black; /* Dark text color */
+    padding: 10px 0; /* Padding for the footer */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the footer text */
+}
+
+/* Ensure the footer stays at the bottom */
+footer {
+    position: fixed; /* Fixed at the bottom of the page */
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive image styles */
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}

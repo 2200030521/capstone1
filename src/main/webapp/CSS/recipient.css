@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F8FF; /* Light blue background in case image fails */
+    background-image: url('../Images/rec4.jpg'); /* Add background image */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fix the image to the viewport */
+    background-size: cover; /* Ensure the image covers the entire background */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    height: 100vh; /* Full viewport height */
+    color: #000000; /* Black text for readability */
+}
+
+/* Navbar Styles */
+.custom-navbar {
+    background-color: #ADD8E6; /* Light blue navbar background */
+    color: #333; /* Dark text color */
+    padding: 10px 15px; /* Padding inside navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.custom-navbar .navbar-brand {
+    color: #2d2d2d; /* Dark gray brand color */
+    font-weight: bold; /* Bold brand text */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #2d2d2d; /* Dark gray text for nav links */
+    padding: 10px 15px; /* Padding for nav links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #87CEFA; /* Lighter blue on hover */
+}
+
+/* Main Container Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styles */
+.custom-card {
+    width: 100%;
+    max-width: 500px; /* Smaller card size */
+    background-color: #E0FFFF; /* Light blue background for container */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.btn-request, .btn-view {
+    background-color: #ADD8E6; /* Light blue button background */
+    color: #333; /* Dark text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 30px; /* Padding inside buttons */
+    font-size: 16px; /* Larger font size */
+    margin: 0 10px; /* Margin between buttons */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Inline-block for better button appearance */
+    transition: background-color 0.3s, color 0.3s; /* Smooth background color transition */
+}
+
+.btn-request:hover, .btn-view:hover {
+    background-color: #87CEFA; /* Darker blue on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ADD8E6; /* Light blue footer */
+    color: #2d2d2d; /* Dark gray text */
+    padding: 15px; /* Padding inside footer */
+    margin-top: 20px; /* Space above footer */
+    width: 100%;
+    text-align: center; /* Center text */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .custom-card {
+        width: 100%;
+        max-width: 350px; /* Smaller card on small screens */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center text on small screens */
+    }
+
+    .d-flex {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+}

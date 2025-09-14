@@ -1,0 +1,83 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ADD8E6; /* Light blue background */
+    background-image: url('../Images/donor1.jpg'); /* Add the background image */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.custom-navbar {
+    background-color: #ADD8E6; /* Light blue background for the navbar */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: black !important; /* Change text color to black */
+}
+
+.custom-navbar .nav-link:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Jumbotron styles */
+.jumbotron {
+    background-color: #ADD8E6; /* Light blue background */
+    color: #333; /* Dark text color */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Form container styles */
+.form-container {
+    max-width: 500px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form horizontally */
+    background: white; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside the form */
+}
+
+/* Form styles */
+.container h2 {
+    color: #28a745; /* Green color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #28a745; /* Green border for inputs */
+}
+
+.form-control:focus {
+    border-color: #155724; /* Darker green when focused */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Glow effect on focus */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #1E90FF; /* Blue background for the login button */
+    border: none; /* No border */
+}
+
+.btn-primary:hover {
+    background-color: #4682B4; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #ADD8E6; /* Light blue background */
+    color: black; /* Dark text color */
+    padding: 10px 0; /* Padding for the footer */
+    position: relative; /* Positioning relative */
+}
+
+/* Responsive image styles */
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}

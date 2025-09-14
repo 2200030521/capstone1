@@ -1,0 +1,98 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../Images/rec1.jpg') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Navbar styles */
+.custom-navbar {
+    background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency for the navbar */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: black !important; /* Change text color to black */
+}
+
+.custom-navbar .nav-link:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Jumbotron styles */
+.jumbotron {
+    background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
+    color: #333; /* Dark text color */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Form container styles */
+.form-container {
+    max-width: 500px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form horizontally */
+    background: white; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside the form */
+}
+
+/* Form styles */
+.container h2 {
+    color: #ADD8E6; /* Light blue color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ADD8E6; /* Light blue border for inputs */
+}
+
+.form-control:focus {
+    border-color: #ADD8E6; /* Light blue when focused */
+    box-shadow: 0 0 5px rgba(120, 194, 224, 0.5); /* Glow effect on focus */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #ADD8E6; /* Light blue background for buttons */
+    border: none; /* No border */
+}
+
+.btn-primary:hover {
+    background-color: #ADD8E6; /* Darker light blue on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(173, 216, 230, 0.8); /* Light blue background with transparency */
+    color: black; /* Dark text color */
+    padding: 10px 0; /* Padding for the footer */
+    position: relative; /* Positioning relative */
+    width: 100%; /* Full width */
+}
+
+/* Card styles */
+.card {
+    background-color: white; /* White background for cards */
+    border: 1px solid #ADD8E6; /* Light blue border for cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Card heading and body styles */
+.card-header {
+    background-color: #ADD8E6; /* Light blue background for card header */
+    color: black; /* Black text for card header */
+}
+
+.card-body {
+    color: #333; /* Dark text color for the card body */
+}
+
+/* Responsive image styles */
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}

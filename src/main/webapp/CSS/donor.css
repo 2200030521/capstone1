@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    background: url('../Images/donor2.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the whole background */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    height: 100vh; /* Full viewport height */
+    color: #000000; /* Black text for readability */
+}
+
+/* Custom Navbar Styling */
+.custom-navbar {
+    background-color: #ADD8E6; /* Light blue color for navbar */
+    color: #000000; /* Black text color for navbar items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #000000; /* Black color for text */
+}
+
+.custom-navbar .navbar-brand:hover,
+.custom-navbar .nav-link:hover {
+    color: #333333; /* Darker color on hover */
+}
+
+/* Jumbotron Styling */
+/* Card Styling */
+.jumbotron {
+    background-color: #C4D7FF; /* Light blue background for the card */
+    color: #333; /* Dark text for readability */
+    padding: 30px; /* Padding inside the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space at the top */
+    margin-bottom: 20px; /* Space at the bottom */
+}
+
+/* Container Styling */
+.container {
+    flex-grow: 1; /* Allow the container to expand */
+    text-align: center; /* Center text within the container */
+}
+
+/* Button Styling */
+.custom-btn {
+    padding: 15px 30px; /* Larger button padding for better aesthetics */
+    font-size: 18px; /* Increased font size for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background transition */
+    background-color: #ADD8E6; /* Light blue background */
+    color: #000000; /* Black text for contrast */
+    border: none; /* Remove default border */
+}
+
+.custom-btn:hover {
+    opacity: 0.9; /* Slightly fade the button on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ADD8E6; /* Light blue background */
+    color: #000000; /* Black text for footer */
+    padding: 20px 0; /* Padding for footer */
+    position: relative; /* Allow positioning of footer */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width for footer */
+}

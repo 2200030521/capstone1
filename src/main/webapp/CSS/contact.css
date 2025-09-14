@@ -1,0 +1,136 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Very light grayish blue */
+    background-image: url("../Images/contactus.jpg"); /* Path to your background image */
+    background-size: cover; /* Full-size background */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; /* Keep background fixed while scrolling */
+    animation: backgroundMove 30s infinite linear; /* Smoothly move the background */
+}
+
+/* Background Animation */
+@keyframes backgroundMove {
+    0% {
+        background-position: center top;
+    }
+    50% {
+        background-position: top right;
+    }
+    100% {
+        background-position: center top;
+    }
+}
+
+/* Header Section */
+.header {
+    background-color: rgba(44, 62, 80, 0.8); /* Darker blue-gray for a professional feel */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    background-image: linear-gradient(45deg, rgba(44, 62, 80, 0.8), rgba(52, 152, 219, 0.8)); /* Gradient with a professional touch */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: headerSlideIn 2s ease-out; /* Slide-in effect for header */
+}
+
+/* Header Slide-in Animation */
+@keyframes headerSlideIn {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Contact Form Styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.card {
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.card .form-control {
+    border-radius: 5px;
+    border: 1px solid #dfe4ea; /* Soft light gray border */
+    padding: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+.card .form-control:focus {
+    border-color: #3498db; /* Professional blue */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Button Styling */
+.card .btn {
+    background-color: #3498db; /* Professional blue */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: rgba(44, 62, 80, 0.8); /* Same dark blue-gray as header */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    background-image: linear-gradient(45deg, rgba(44, 62, 80, 0.8), rgba(52, 152, 219, 0.8)); /* Subtle gradient for footer */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    animation: footerFadeIn 2s ease-out; /* Fade-in effect for footer */
+}
+
+/* Footer Fade-in Animation */
+@keyframes footerFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Form Title Styling */
+.text-primary {
+    color: #3498db !important; /* Professional blue */
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+    .header h1 {
+        font-size: 24px;
+    }
+    .header p {
+        font-size: 18px;
+    }
+}

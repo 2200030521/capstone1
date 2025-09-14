@@ -1,0 +1,71 @@
+/* Body Background */
+body {
+    background-color: #E6F7FF; /* Light blue background color */
+    background-image: url('../Images/donor1.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center center; /* Center the background image */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom Navbar Styling */
+.navbar {
+    background-color: #ADD8E6 !important; /* Light blue navbar */
+    border-bottom: 2px solid #007BFF; /* Blue bottom border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Styling for Login Card (3D Effect) */
+.card {
+    border: none;
+    border-radius: 1.5rem; /* Rounded corners for card */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 15px rgba(0, 0, 0, 0.1); /* 3D shadow */
+    background: linear-gradient(145deg, #ADD8E6, #E6F7FF); /* Gradient background for card with light blue */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+    padding: 40px 30px;
+    transform-style: preserve-3d; /* Preserve 3D space */
+}
+
+/* Hover effect for 3D Card */
+.card:hover {
+    transform: translateY(-15px) rotateX(10deg) rotateY(10deg); /* Move and rotate card for 3D effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 12px 18px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    filter: brightness(1.1); /* Slight brightness on hover */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007BFF; /* Blue button color */
+    border-color: #007BFF; /* Matching border */
+    border-radius: 0.5rem; /* Rounded button */
+    padding: 12px 20px; /* Button padding */
+    font-size: 1.1rem; /* Slightly larger font */
+    font-weight: bold; /* Bold button text */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Matching border color */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #ADD8E6; /* Light blue footer */
+    color: #333;
+    padding: 30px 0;
+    font-size: 1rem; /* Slightly larger font */
+    border-top: 2px solid #007BFF; /* Border on top */
+}
+
+.footer p {
+    margin: 0; /* Remove margin for better spacing */
+    font-weight: bold; /* Make footer text bold */
+}
+
+/* Add some spacing between elements */
+.container {
+    margin-top: 50px; /* Add margin at the top */
+}

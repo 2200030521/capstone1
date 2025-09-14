@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    background-image: url('../Images/rec4.jpg'); /* Add your background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fix the image to the viewport */
+    font-family: 'Arial', sans-serif;
+    color: #000; /* Text color */
+}
+
+/* Navbar Styles */
+.custom-navbar {
+    background: #ADD8E6; /* Light blue navbar background */
+}
+
+.nav-link {
+    color: #000000; /* Black color for navbar links */
+}
+
+h1 {
+    color: #2e7d32; /* Dark green color for heading */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555; /* Gray color for paragraph */
+    font-size: 1.2em;
+}
+
+/* Form Styles */
+.request-form {
+    background: rgba(255, 255, 255, 0.9); /* Light background for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Reduced width of the form */
+    margin: auto; /* Center the form */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    gap: 10px; /* Space between grid items */
+}
+
+/* Form element styles */
+.request-form label {
+    grid-column: span 2; /* Labels span both columns */
+    margin-bottom: 5px;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea,
+.request-form .btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    grid-column: span 2; /* Default to spanning both columns */
+}
+
+.request-form .btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #ADD8E6; /* Light blue button background */
+    color: #000;
+    border: none;
+    cursor: pointer;
+    grid-column: span 2; /* Button spans both columns */
+}
+
+.request-form .btn:hover {
+    background-color: #87CEEB; /* Darker light blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ADD8E6; /* Light blue background for the footer */
+    color: #555;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0; /* Padding for the footer */
+    position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 20px; /* Less padding for smaller screens */
+    }
+
+    .request-form {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove max-width on small screens */
+        display: block; /* Stack elements vertically */
+    }
+
+    .request-form input,
+    .request-form select,
+    .request-form textarea,
+    .request-form .btn {
+        grid-column: span 2; /* Ensure all elements span both columns */
+    }
+}

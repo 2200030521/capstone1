@@ -1,0 +1,235 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #e9ecef, #f4f4f4); /* Subtle gradient background */
+    color: #333;
+}
+
+.navbar {
+    background-color: #ADD8E6; /* Light blue color for navbar */
+}
+
+.custom-navbar {
+    background-color: #ADD8E6 !important; /* Light blue color for custom navbar */
+}
+
+.jumbotron {
+    background-color: #e9ecef;
+    padding: 2rem 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img.img-fluid {
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #BDE8CA;
+    padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #006400;
+}
+
+/* Styling for Founder and Partners Section */
+.founders-section, .partners-section {
+    background-color: #F4F4F4;
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.founders-section h2, .partners-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.founders-section .row {
+    justify-content: center;
+}
+
+.founders-section .col-md-4 {
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.founders-section img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #006400;
+    margin-bottom: 15px;
+}
+
+.founders-section h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.founders-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.founders-section .col-md-4:hover {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.founders-section .col-md-4 h4 {
+    color: #006400;
+}
+
+.partners-section img {
+    height: 80px;
+    width: auto;
+}
+
+/* Removed Get in Touch Section and replaced it with a full-page light blue background */
+body {
+    background-color: #ADD8E6; /* Light blue background */
+}
+
+/* Ensure the full-page background is light blue */
+.container {
+    background-color: #ADD8E6; /* Light blue background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for "Join the Movement Against Food Waste" Section */
+.card {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 2px solid #006400; /* Green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-body {
+    color: #333;
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #006400;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.card:hover {
+    background-color: #e9ecef; /* Slight grey hover effect */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body p {
+    margin-bottom: 1rem;
+}
+
+/* Movable Effect for Last Card */
+.card:last-child {
+    position: relative;
+    animation: moveCard 10s infinite alternate; /* Animation to move the last card */
+}
+
+@keyframes moveCard {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); /* Slight move to the right */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Carousel Styling */
+.carousel-inner .carousel-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img {
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+/* Improved button styling */
+.navbar-nav .nav-link {
+    color: #333 !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #006400 !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #006400;
+}
+
+/* Styling for the "Join the Movement Against Food Waste" section */
+.card-body {
+    color: #333; /* Make text color dark for readability */
+}
+
+.card:last-child .card-body p {
+    color: #0000FF; /* Change text color to blue for better visibility */
+    font-size: 1.2rem; /* Adjust text size */
+}
+
+/* Updated styling for the "Join the Movement" section */
+.card:last-child {
+    background-color: #DFF7E1; /* Light green background for better contrast */
+    color: #333; /* Dark text color for readability */
+    border: 2px solid #006400; /* Green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body p {
+    font-size: 1.2rem; /* Adjust text size */
+}
+
+.card-body h5 {
+    font-weight: bold;
+    color: #006400; /* Green color for heading */
+}
+
+footer {
+    background-color: #BDE8CA;
+    text-align: center;
+    padding: 20px;
+}
