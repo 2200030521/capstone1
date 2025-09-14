@@ -9,8 +9,16 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/your-username/reduce-food-wastage.git'
+                checkout([$class: 'GitSCM',
+    branches: [[name: '*/main']],
+    doGenerateSubmoduleConfigurations: false,
+    extensions: [],
+    userRemoteConfigs: [[
+        url: 'https://github.com/2200030521/capstone1.git',
+        credentialsId: 'github-pat'
+    ]]
+])
+
             }
         }
 
