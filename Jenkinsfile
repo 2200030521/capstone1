@@ -40,13 +40,13 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                echo 'Deploying WAR to Tomcat...'
-                // Example: Copy WAR to Tomcat webapps directory
-                bat "copy target\\*.war C:\\path\\to\\tomcat\\webapps\\"
-            }
-        }
+       stage('Deploy') {
+    steps {
+        echo 'Running Spring Boot JAR...'
+        bat "start java -jar target\\Finalproject-0.0.1-SNAPSHOT.jar"
+    }
+}
+
     }
 
     post {
